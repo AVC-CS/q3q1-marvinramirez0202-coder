@@ -6,19 +6,20 @@ using namespace std;
 int main()
 {
     double a, b, c;
-    double discriminant;
-    double root1;
-    double root2;
     // TODO
     cin >> a >> b >> c;
 
-    discriminant = b * b -(4)*a*c;
+    double discriminant = b * b -(4)*a*c;
 
-    root1 = (-b + sqrt(discriminant))/ (2*a);
-    root2 = (-b - sqrt(discriminant))/ (2*a);
+    double root1 = (-b + sqrt(discriminant))/ (2 * a);
+    double root2 = (-b - sqrt(discriminant))/ (2 * a);
+
+    double larger = (root1 > root2) ? root1 : root2;
+    double smaller = (root1 > root2) ? root2 : root1;
 
     cout << setprecision(2) << fixed;
-    cout << root1 << " " << root2;
+
+    cout << larger << " " << smaller << endl;
     // TODO
 
     return 0;
