@@ -19,7 +19,8 @@ int main()
 
     cout << setprecision(2) << fixed;
 
-    cout << larger << " " << smaller << endl;
+    cout << larger << " " << smaller;
+
     // TODO
 
     return 0;
